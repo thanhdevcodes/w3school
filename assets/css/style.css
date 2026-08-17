@@ -530,11 +530,19 @@ footer.modal-footer {
   .text-content {
     display: none;
   }
-
+  #nav {
+    display: block;
+  }
   #nav > li {
     display: block;
   }
+  #nav li a {
+    display: block;
+  }
 
+  #nav > li:first-child {
+    display: inline-block;
+  }
   #header .search {
     display: none;
   }
@@ -543,6 +551,19 @@ footer.modal-footer {
     overflow: hidden;
   }
   .bar-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #nav .subnav {
+    position: static;
+    box-shadow: none;
+    display: none;
+  }
+
+  .more-menu .open .subnav {
     display: block;
   }
 }
